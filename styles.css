@@ -1,0 +1,32 @@
+.header{
+    text-align: center;
+    font-size: 100px;
+   
+
+}
+
+.rock {
+    display: none;
+}
+
+.paper {
+    display: none;
+}
+
+.scissor {
+    display: none;
+}
+
+.selected {
+    background-color: pink;
+}
+
+
+
+
+
+.reset {
+    background-color: white;
+    margin-left: 50%;
+}
+

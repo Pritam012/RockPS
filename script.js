@@ -42,15 +42,15 @@ function  playRound(playerSelection, computerSelection) {
 }
 
 
-function game() {
+function game(playerChoice) {
     
     let result;
     let compScore = 0;
-    let playerScore = 0;
+    
     let compchoice;
    
-    for (let i = 0; i < 5 ; i++) {
-        let playerChoice = prompt("What's your choice?");
+   
+        
         compchoice = getComputerChoice();
         result = playRound(playerChoice, compchoice);
           console.log(result);
@@ -59,10 +59,17 @@ function game() {
         } else if (result.slice(0,8) === "You Win!") {
             playerScore++ ;
         }
-    }
+    
 
-    console.log("Player and Computer Score" , compScore, playerScore)
+    console.log("Player and Computer Score" , playerScore, compScore)
 }
 
 
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click',() => {
+        alert(1);
+    });
+})
 
